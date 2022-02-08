@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Product List</title>
+</head>
+<body>
+    
+    <header>
+        <h1>Product List</h1>
+
+        <nav>
+            <a href="/adicionar produtos/add.html">
+                <button class="add-button">ADD</button>
+            </a>
+
+            <button class="delete-product-btn" onclick="delete-product()">MASS DELETE</button>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <div class="quadrado-produto">
+                <div class="informacoes">
+                    <input type="checkbox" id="delete-checkbox" class="delete-checkbox">
+                    <p><span> NOME PRODUTO </span></p>
+                    <p>preço</p>
+                    <p>peso</p>
+                    <p> CODIGO DO PRODUTO</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+
+    <footer>
+        <h4>Scandiweb Test assignment</h4>
+
+        <div class="meus-contatos">
+            <p>&copy; Pepper</p>
+        </div>
+    </footer>
+
+
+    <script src="index.js"></script>
+</body>
+</html>
