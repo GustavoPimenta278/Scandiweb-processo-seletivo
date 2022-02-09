@@ -22,23 +22,28 @@
     </header>
 
     <form action="">
-        
+        <label for="sku">
+            SKU: <input type="text" name="sku" id="sku"><br>
+        </label>
+
+        <label for="name-product">
+            Name: <input type="text" name="name-product" id="name-product"><br>
+        </label>
+
+        <label for="price">
+            Price ($): <input type="text" name="price" id="price"><br>
+        </label>
+
+
+        <label for="typeSwitcher">
+            Type Switcher <select name="typeSwitcher" id="typeSwitcher">
+
+                <option value="DVD" id="DVD" name="DVD">DVD</option>
+                <option value="Furniture" id="furniture" name="furniture">Furniture</option>
+                <option value="Book" id="book" name="book">Book</option>
+            </select>
+        </label>
     </form>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     <script src="add.js"></script>
 </body>
