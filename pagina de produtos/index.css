@@ -1,0 +1,8 @@
+body {
+    font: normal, 15pt, normal;
+}
+
+cabecalho {
+    display: flex;
+    justify-content: flex-end;
+}

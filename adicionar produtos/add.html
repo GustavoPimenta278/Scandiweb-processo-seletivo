@@ -10,40 +10,45 @@
 <body>
     
     <header>
-        <h1>Product Add</h1>
+        <div class="inner">
+            <div class="logo">
+                <div>
+                   <h1>Product List</h1>
+                </div>
+            </div>
 
-        <nav>
-            <a href="/pagina de produtos/index.html">
-                <button class="save" onclick="save()">Save</button>
-            </a>
-
-            <button class="cancel" onclick="cancela_cadastro()">Cancel</button>
-        </nav>
+            <nav>
+                <li><span><a href="/pagina de produtos/index.html"><button class="buttonADD" onclick="gerarProduto()"> Gerar Produto</button></a></span></li>
+                <li><span><button class="button" id="delete-product-btn" onclick="deleteProduct()">MASS DELETE</button></span></li>
+            </nav>
+        </div>
     </header>
 
-    <form action="">
-        <label for="sku">
-            SKU: <input type="text" name="sku" id="sku"><br>
-        </label>
+    <main>    
+        <form action="">
+            <label for="sku">
+                SKU: <input type="text" name="sku" id="sku" autofocus><br>
+            </label>
 
-        <label for="name-product">
-            Name: <input type="text" name="name-product" id="name-product"><br>
-        </label>
+            <label for="name-product">
+                Name: <input type="text" name="name-product" id="name-product"><br>
+            </label>
 
-        <label for="price">
-            Price ($): <input type="text" name="price" id="price"><br>
-        </label>
+            <label for="price">
+                Price ($): <input type="text" name="price" id="price"><br>
+            </label>
 
 
-        <label for="typeSwitcher">
-            Type Switcher <select name="typeSwitcher" id="typeSwitcher">
+            <label for="typeSwitcher">
+                Type Switcher <select name="typeSwitcher" id="typeSwitcher">
 
-                <option value="DVD" id="DVD" name="DVD">DVD</option>
-                <option value="Furniture" id="furniture" name="furniture">Furniture</option>
-                <option value="Book" id="book" name="book">Book</option>
-            </select>
-        </label>
-    </form>
+                    <option value="DVD" id="DVD" name="DVD">DVD</option>
+                    <option value="Furniture" id="furniture" name="furniture">Furniture</option>
+                    <option value="Book" id="book" name="book">Book</option>
+                </select>
+            </label>
+        </form>
+    </main>     
 
     <script src="add.js"></script>
 </body>
