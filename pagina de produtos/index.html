@@ -10,17 +10,18 @@
 <body>
     
     <header>
-        <div class="cabecalho">
-        <h1>Product List</h1>
+        <div class="inner">
+            <div class="logo">
+                <div>
+                   <h1>Product List</h1>
+                </div>
+            </div>
 
-        <nav>
-            <a href="/adicionar produtos/add.html">
-                <button class="add-button">ADD</button>
-            </a>
-
-            <button class="delete-product-btn" onclick="delete-product()">MASS DELETE</button>
-        </nav>
-    </div>
+            <nav>
+                <li><span><a href="/adicionar produtos/add.html"><button class="buttonADD"> ADD</button></a></span></li>
+                <li><span><button class="deleteButton" id="delete-product-btn" onclick="massDelete()">MASS DELETE</button></span></li>
+            </nav>
+        </div>
     </header>
 
     <main>
@@ -40,7 +41,8 @@
 
 
     <footer>
-        <h4>Scandiweb Test assignment</h4>
+        <hr>
+        <h4 style="padding-top: 10px;">Scandiweb Test assignment</h4>
 
         <div class="meus-contatos">
             <p>&copy; Pepper</p>
